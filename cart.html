@@ -145,7 +145,7 @@
       <h1 class="visually-hidden">Commander</h1>
       <div class="container py-5">
         <div class="row row-cols-1 row-cols-lg-2">
-          <div class="col-lg-8">
+          <div class="col-lg-8 mb-3 order-2 order-lg-1">
             <h2 class="fw-bold text-uppercase">Adresse de facturation</h2>
             <div class="row gy-3 py-5">
               <div class="col-6">
@@ -252,34 +252,34 @@
             </div>
             <button class="w-100 btn btn-primary btn-lg" type="submit">Valider le paiement</button>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-3 order-1 order-lg-2">
               <h2 class="fw-bold text-uppercase">Mon panier <span class="badge text-bg-dark rounded-pill align-top">3 <span class="visually-hidden">articles dans le panier</span></span></h2>
-              <ul class="list-group mb-3 py-5">
+              <ul class="list-group my-5">
               <li class="list-group-item d-flex justify-content-between lh-sm">
                 <div>
-                  <h6 class="my-0">Product name</h6>
+                  <p class="fw-bold product-name text-uppercase my-0">Sac cuir caramel</p>
                   <small class="text-muted">Brief description</small>
                 </div>
-                <span class="text-muted">$12</span>
+                <span class="text-muted">63€</span>
               </li>
               <li class="list-group-item d-flex justify-content-between lh-sm">
                 <div>
-                  <h6 class="my-0">Second product</h6>
+                  <p class="fw-bold product-name text-uppercase my-0">Sac cuir caramel</p>
                   <small class="text-muted">Brief description</small>
                 </div>
                 <span class="text-muted">$8</span>
               </li>
               <li class="list-group-item d-flex justify-content-between lh-sm">
                 <div>
-                  <h6 class="my-0">Third item</h6>
+                  <p class="fw-bold product-name text-uppercase my-0">Sac cuir caramel</p>
                   <small class="text-muted">Brief description</small>
                 </div>
                 <span class="text-muted">$5</span>
               </li>
               <li class="list-group-item d-flex justify-content-between bg-light">
                 <div class="text-success">
-                  <h6 class="my-0">Promo code</h6>
-                  <small>EXAMPLECODE</small>
+                  <h6 class="my-0">Code promo</h6>
+                  <small>MOINS10</small>
                 </div>
                 <span class="text-success">−$5</span>
               </li>
@@ -288,12 +288,15 @@
                 <strong>$20</strong>
               </li>
             </ul>
-            <form class="card p-1">
+            <form class="card p-1 mb-5">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Code promo">
-                <button type="submit" class="btn btn-secondary">Appliquer</button>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="promo-code" required="required" placeholder="Code promo">
+                  <label for="promo-code">Code promo</label>
+                </div>
+                <button class="btn btn-dark" type="submit">Appliquer <span class="visually-hidden">le code</span></button>
               </div>
-            </form>
+              </form>
           </div>
         </div>
       </div>
