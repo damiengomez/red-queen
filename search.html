@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Boutique A11yce</title>
+    <title>Rechercher - Boutique A11yce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900" rel="stylesheet">
@@ -39,16 +39,16 @@
       </nav>
       <nav role="navigation" class="navbar navbar-expand-sm bg-light border-top" aria-label="Choix de langue et devise">
         <div class="container justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" aria-current="true" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Version Française">Fr</a>
-              <ul class="dropdown-menu">
+          <ul class="nav">
+            <li class="dropdown">
+              <a class="btn btn-secondary btn-sm dropdown-toggle mx-2" href="#" aria-current="true" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Version Française">Fr</a>
+              <ul class="dropdown-menu dropdown-menu-end">
                   <li><a class="dropdown-item" href="#" lang="en" hreflang="en" aria-label="English version">En</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" aria-current="true" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Afficher les prix en Euro"><abbr title="Euro">EUR</abbr></a>
-              <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a class="btn btn-secondary btn-sm dropdown-toggle ms-1" href="#" aria-current="true" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Afficher les prix en Euro"><abbr title="Euro">EUR</abbr></a>
+              <ul class="dropdown-menu dropdown-menu-end">
                   <li><a class="dropdown-item" href="#" lang="en" hreflang="en" aria-label="Afficher les prix en Great Britain Pound"><abbr lang="en" title="Great Britain Pound">GBP</abbr></a></li>
                   <li><a class="dropdown-item" href="#" lang="en" hreflang="en" aria-label="Afficher les prix en United States Dollar"><abbr lang="en" title="United States Dollar">USD</abbr></a></li>
                   <li><a class="dropdown-item" href="#" lang="en" hreflang="en" aria-label="Afficher les prix en Canadian Dollar"><abbr lang="en" title="Canadian Dollar">CAD</abbr></a></li>
@@ -59,15 +59,15 @@
       </nav>
       <nav role="navigation" class="navbar navbar-expand-lg py-3" aria-label="Navigation principale">
         <div class="container">
-          <a class="navbar-brand fs-1 fw-lighter" href="./" aria-current="page" style="font-family: 'Montserrat', sans-serif;">A<span class="fw-bold">11</span>YCE</a>
+          <a class="navbar-brand fs-1 fw-lighter" href="./"" style="font-family: 'Montserrat', sans-serif;">A<span class="fw-bold">11</span>YCE</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Menu de navigation principale">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav me-auto">
               <li class="nav-item dropdown position-static">
-                <a class="nav-link active dropdown-toggle border-bottom border-3" href="#" role="button" aria-current="page" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La boutique</a>
-                <div class="dropdown-menu w-100 mt-0 border-0 rounded-0 pb-2" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La boutique</a>
+                <div class="dropdown-menu w-100 mt-0 border-0 rounded-0 pb-2 text-bg-light">
                   <div class="container">
                     <div class="row row-cols-1">
                       <div class="col mb-3">
@@ -119,7 +119,7 @@
             </ul>
             <ul class="navbar-text flex-shrink list-inline mb-0">
               <li class="list-inline-item">
-                <a href="search.html"><i class="bi bi-search" role="img" aria-label="Rechercher"></i></a>
+                <a href="search.html" aria-current="page"><i class="bi bi-search" role="img" aria-label="Rechercher"></i></a>
               </li>
               <li class="list-inline-item">
                 <a href="#"><i class="bi bi-person" role="img" aria-label="Mon compte"></i></a>
@@ -142,193 +142,8 @@
       </nav>
     </header>
     <main role="main">
-      <h1 class="visually-hidden">Boutique A11yce</h1>
-      <div style="background-image:url('assets/images/collection-2022.jpg');background-size:cover;background-repeat:no-repeat;" class="position-relative py-5">
-        <div class="container py-5">
-              <h2>
-                <span class="d-block"><span class="text-bg-light lh-base fw-bold text-uppercase fs-6 px-2 py-1">Hiver 2022 </span></span>
-                <span class="text-bg-light lh-base fs-1 px-2 py-1">Nouvelle Collection</span>
-              </h2>
-              <a class="btn btn-dark stretched-link fw-bold" href="#">Explorer la collection <span class="visually-hidden">hiver 2022</span></a>
-        </div>
-      </div>
       <div class="container py-5">
-        <h2 class="fw-bold text-uppercase">Nouveautés</h2>
-        <a class="btn btn-outline-dark" href="#">Voir plus <span class="visually-hidden">de nouveautés</span></a>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 py-3">
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="position-relative">
-                <a href="#" class="stretched-link" aria-label="Sac cuir caramel 63€ au lieu de 70€"><img src="assets/images/product-bag-1.jpg" class="card-img-top" alt=""></a>
-                <div class="card-img-overlay">
-                  <ul class="list-unstyled position-absolute top-0 end-0 m-3">
-                    <li><span class="badge rounded-pill text-bg-primary">Nouveau <span class="visually-hidden">produit</span></span></li>
-                    <li><span class="badge rounded-pill text-bg-warning">-10% <span class="visually-hidden">de réduction</span></span></li>
-                  </ul>
-                  <div class="position-absolute top-50 start-50 translate-middle">
-                    <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter Sac cuir caramel aux favoris"></i></button>
-                    <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter Sac cuir caramel au panier"></i></button>
-                  </div>
-                </div>
-              </div>
-              <p class="fw-bold">
-                <small class="d-block product-name text-uppercase">Sac cuir caramel <span class="visually-hidden">63€ au lieu de 70€</span></small>
-                <span class="d-block product-price" aria-hidden="true"><s class="fw-normal">70€</s> 63€</span> 
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="position-relative">
-                <a href="#" class="stretched-link" aria-label="Sac cuir rouge 70€"><img src="assets/images/product-bag-2.jpg" class="card-img-top" alt=""></a>
-                <div class="card-img-overlay">
-                  <ul class="list-unstyled position-absolute top-0 end-0 m-3">
-                    <li><span class="badge rounded-pill text-bg-primary">Nouveau <span class="visually-hidden">produit</span></span></li>
-                  </ul>
-                  <div class="position-absolute top-50 start-50 translate-middle">
-                    <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter Sac cuir rouge aux favoris"></i></button>
-                    <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter Sac cuir rouge au panier"></i></button>
-                  </div>
-                </div>
-              </div>
-              <p class="fw-bold">
-                <small class="d-block product-name text-uppercase">Sac cuir rouge <span class="visually-hidden">70€</span></small>
-                <span class="d-block product-price" aria-hidden="true">70€</span> 
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="position-relative">
-                <a href="#" class="stretched-link" aria-label="Sac cuir noir 70€"><img src="assets/images/product-bag-3.jpg" class="card-img-top" alt=""></a>
-                <div class="card-img-overlay">
-                  <ul class="list-unstyled position-absolute top-0 end-0 m-3">
-                    <li><span class="badge rounded-pill text-bg-primary">Nouveau <span class="visually-hidden">produit</span></span></li>
-                  </ul>
-                  <div class="position-absolute top-50 start-50 translate-middle">
-                    <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter Sac cuir noir aux favoris"></i></button>
-                    <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter Sac cuir noir au panier"></i></button>
-                  </div>
-                </div>
-              </div>
-              <p class="fw-bold">
-                <small class="d-block product-name text-uppercase">Sac cuir noir <span class="visually-hidden">70€</span></small>
-                <span class="d-block product-price" aria-hidden="true">70€</span> 
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="position-relative">
-                <a href="#" class="stretched-link" aria-label="Sac cuir marron 63€ au lieu de 70€"><img src="assets/images/product-bag-4.jpg" class="card-img-top" alt=""></a>
-                <div class="card-img-overlay">
-                  <ul class="list-unstyled position-absolute top-0 end-0 m-3">
-                    <li><span class="badge rounded-pill text-bg-primary">Nouveau <span class="visually-hidden">produit</span></span></li>
-                    <li><span class="badge rounded-pill text-bg-warning">-10% <span class="visually-hidden">de réduction</span></span></li>
-                  </ul>
-                  <div class="position-absolute top-50 start-50 translate-middle">
-                    <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter Sac cuir marron aux favoris"></i></button>
-                    <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter Sac cuir marron au panier"></i></button>
-                  </div>
-                </div>
-              </div>
-              <p class="fw-bold">
-                <small class="d-block product-name text-uppercase">Sac cuir marron <span class="visually-hidden">63€ au lieu de 70€</span></small>
-                <span class="d-block product-price" aria-hidden="true"><s class="fw-normal">70€</s> 63€</span> 
-              </p>
-            </div>
-          </div>
-        </div>
-        <h2 class="fw-bold text-uppercase">Tendances</h2>
-        <a class="btn btn-outline-dark" href="#">Voir plus <span class="visually-hidden">de tendances</span></a>
-        <div class="row row-cols-1 row-cols-lg-2 g-3 py-3">
-          <div class="col">
-            <div class="row row-cols-1 row-cols-sm-2 g-3">
-              <div class="col">
-                <div class="card h-100 border-0">
-                  <div class="position-relative">
-                    <a href="#" class="stretched-link" aria-label="T-shirt vert 16€ au lieu de 20€"><img src="assets/images/product-t-shirt-1.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-img-overlay">
-                      <ul class="list-unstyled position-absolute top-0 end-0 m-3">
-                        <li><span class="badge rounded-pill text-bg-warning">-20% <span class="visually-hidden">de réduction</span></span></li>
-                      </ul>
-                      <div class="position-absolute top-50 start-50 translate-middle">
-                        <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter T-shirt vert aux favoris"></i></button>
-                        <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter T-shirt vert au panier"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="fw-bold">
-                    <small class="d-block product-name text-uppercase">T-shirt vert <span class="visually-hidden">16€ au lieu de 20€</span></small>
-                    <span class="d-block product-price" aria-hidden="true"><s class="fw-normal">20€</s> 16€</span> 
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 border-0">
-                  <div class="position-relative">
-                    <a href="#" class="stretched-link" aria-label="T-shirt violet 20€"><img src="assets/images/product-t-shirt-2.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-img-overlay">
-                      <div class="position-absolute top-50 start-50 translate-middle">
-                        <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter T-shirt violet aux favoris"></i></button>
-                        <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter T-shirt violet au panier"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="fw-bold">
-                    <small class="d-block product-name text-uppercase">T-shirt violet <span class="visually-hidden">20€</span></small>
-                    <span class="d-block product-price" aria-hidden="true">20€</span> 
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 border-0">
-                  <div class="position-relative">
-                    <a href="#" class="stretched-link" aria-label="T-shirt bleu 20€"><img src="assets/images/product-t-shirt-3.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-img-overlay">
-                      <div class="position-absolute top-50 start-50 translate-middle">
-                        <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter T-shirt bleu aux favoris"></i></button>
-                        <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter T-shirt bleu au panier"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="fw-bold">
-                    <small class="d-block product-name text-uppercase">T-shirt bleu <span class="visually-hidden">20€</span></small>
-                    <span class="d-block product-price" aria-hidden="true">20€</span> 
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 border-0">
-                  <div class="position-relative">
-                    <a href="#" class="stretched-link" aria-label="T-shirt rouge 20€"><img src="assets/images/product-t-shirt-4.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-img-overlay">
-                      <div class="position-absolute top-50 start-50 translate-middle">
-                        <button type="button" class="btn btn-dark fav-toast"><i class="bi bi-heart" role="img" aria-label="Ajouter T-shirt rouge aux favoris"></i></button>
-                        <button type="button" class="btn btn-dark cart-toast"><i class="bi bi-bag" role="img" aria-label="Ajouter T-shirt rouge au panier"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="fw-bold">
-                    <small class="d-block product-name text-uppercase">T-shirt rouge <span class="visually-hidden">20€</span></small>
-                    <span class="d-block product-price" aria-hidden="true">20€</span> 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div style="background-image:url('assets/images/collection-suit.jpg');background-size:cover;background-repeat:no-repeat;" class="position-relative h-100 rounded-top">
-              <div class="container py-5">
-                <h3>
-                  <span class="d-block"><span class="text-bg-light lh-base fw-bold text-uppercase fs-6 px-2 py-1">Costumes </span></span>
-                  <span class="text-bg-light lh-base fs-1 px-2 py-1">Homme</span>
-                </h3>
-                <a class="btn btn-dark stretched-link fw-bold" href="#">Explorer la collection <span class="visually-hidden">costumes hommes</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h1 class="fw-bold text-uppercase">Rechercher</h1>
       </div>
     </main>
     <footer class="border-top" role="contentinfo">
