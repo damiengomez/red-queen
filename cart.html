@@ -150,66 +150,70 @@
             <div class="row gy-3 py-5">
               <div class="col-6">
                 <label for="Prénom" class="form-label">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Indiquer votre prénom" value="" required="true" autocomplete="true">
+                <input type="text" class="form-control" id="Prénom" placeholder="Indiquer votre prénom" value="" required="true" autocomplete="true">
                 <div class="invalid-feedback">
-                  Valid first name is required
+                  Un prénom valide est requis
                 </div>
               </div>
 
               <div class="col-6">
                 <label for="Nom" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Indiquer votre nom" value="" required="true" autocomplete="true">
+                <input type="text" class="form-control" id="Nom" placeholder="Indiquer votre nom" value="" required="true" autocomplete="true">
                 <div class="invalid-feedback">
-                  Valid last name is required
+                  Un nom valide est requis
                 </div>
               </div>
 
               <div class="col-12">
                 <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com" autocomplete="true">
+                <input type="email" class="form-control" id="adresse email" placeholder="you@example.com" autocomplete="true">
                 <div class="invalid-feedback">
-                  merci d'indiquer une adresse email valide pour recevoir les informations d'expédition
+                  Merci d'indiquer une adresse email valide pour recevoir les informations d'expédition
                 </div>
               </div>
 
               <div class="col-12">
                 <label for="adresse" class="form-label">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="42 rue A11y " required="true">
+                <input type="text" class="form-control" id="adresse" placeholder="" required="false">
                 <div class="invalid-feedback">
-                  Merci d'indiquer votre adresse de livraison
+                  Merci d'indiquer votre adresse de facturation
                 </div>
               </div>
 
               <div class="col-12">
                 <label for="adresse 2" class="form-label">Address 2 <span class="text-muted">(Optionnel)</span></label>
-                <input type="text" class="form-control" id="address2" placeholder="">
+                <input type="text" class="form-control" id="adresse 2" placeholder="">
               </div>
 
               <div class="col-5">
                 <label for="Pays" class="form-label">Country</label>
-                <select class="form-select" id="country" required="true">
+                <select class="form-select" id="Pays" required="true" aria-expanded="true" visually-hidden="sélectionner votre pays dans la liste">
                   <option value="">Sélectionner...</option>
+                  <option>Bretagne</option>
                   <option>France</option>
+                  <option>Belgique</option>
+                  <option>Listenbourg</option>
                 </select>
                 <div class="invalid-feedback">
-                  Merci de sélectionner un pays valide
+                  Merci de sélectionner un pays
                 </div>
               </div>
 
               <div class="col-4">
                 <label for="Région" class="form-label">State</label>
-                <select class="form-select" id="state" required="true">
+                <select class="form-select" id="Région" required="true" aria-expanded="true" visually-hidden="sélectionner votre région dans la liste">
                   <option value="">Sélectionner</option>
-                  <option>California</option>
+                  <option>Bretagne libre</option>
+                  <option>Autre</option>
                 </select>
                 <div class="invalid-feedback">
-                  Merci de sélectionner une région valide
+                  Merci de sélectionner une région
                 </div>
               </div>
 
               <div class="col-3">
                 <label for="Code postal" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required="true">
+                <input type="text" class="form-control" id="Code postal" placeholder="" required="true">
                 <div class="invalid-feedback">
                   Le code postal est obligatoire
                 </div>
@@ -218,17 +222,17 @@
             <h2 class="fw-bold text-uppercase">Informations de paiement</h2>
             <div class="row gy-3 py-5">
               <div class="col-6">
-                <label for="cc-name" class="form-label">Nom de la carte banquaire</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="Alain bashung" required="true">
-                <small class="text-muted">Nom complet indiqué sur la carte banquaire.</small>
+                <label for="Nom présent sur la carte banquaire" class="form-label">Nom de la carte banquaire</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="true">
+                <small class="text-muted">Nom complet présent sur la carte banquaire.</small>
                 <div class="invalid-feedback">
                   Le nom du pocesseur de la carte banquaire est obligatoire
                 </div>
               </div>
 
               <div class="col-6">
-                <label for="cc-number" class="form-label">Numéro de carte bleu</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="4876 XXXX XXX XXXX" required="true">
+                <label for="Numéro présent sur la carte banquaire" class="form-label">Numéro de carte bleu</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="true">
                 <small class="text-muted">Série de 16 chiffres indiqués sur la carte banquaire.</small>
                 <div class="invalid-feedback">
                   Les 16 chiffres indiqués sur la carte banquaire sont obligatoire
@@ -236,16 +240,16 @@
               </div>
 
               <div class="col-3">
-                <label for="cc-expiration" class="form-label">Expiration</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="06/25" required="true">
+                <label for="Date d'expiration de la carte bleu" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="true">
                 <div class="invalid-feedback">
                   La date d'expiration est obligatoire
                 </div>
               </div>
 
               <div class="col-3">
-                <label for="cc-cvv" class="form-label">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="111" required="true">
+                <label for="Numéro de CVV présent au dos de la carte bleu" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="true">
                 <div class="invalid-feedback">
                   le numéro CVV est composé des 3 chiffres visible derrière votre carte banquaire et est obligatoire
                 </div>
