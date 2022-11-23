@@ -1,7 +1,7 @@
 # a11yce
 A demo store for accessibility tests
 
-https://christopherabate.github.io/a11yce/
+https://damiengomez.github.io/red-queen/
 
 ## File structure
 ```
@@ -10,7 +10,7 @@ https://christopherabate.github.io/a11yce/
 |   |---fonts
 |   |---images
 |   |---js
-|---index.html (accueil)
-|---cart.html (panier)
-|---search.html (recherche)
+|---index-error.html (accueil)
+|---cart-error.html (panier)
+|---search-error.html (recherche)
 ```
