@@ -1,4 +1,4 @@
-# a11yce
+# red-queen
 A demo store for accessibility tests
 
 https://damiengomez.github.io/red-queen/
