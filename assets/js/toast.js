@@ -1,7 +1,7 @@
-// Cart error toast trigger
-document.querySelectorAll('.cart-error-toast').forEach(function(carterrorToastTrigger) {
+// Cart toast trigger
+document.querySelectorAll('.cart-toast').forEach(function(cartToastTrigger) {
   cartToastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(document.querySelector('#carterrorToast'))
+    const toast = new bootstrap.Toast(document.querySelector('#cartToast'))
     toast.show()
   })
 })
