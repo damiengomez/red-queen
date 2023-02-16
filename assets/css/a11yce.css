@@ -9,7 +9,37 @@ div.card-img-overlay div button{
 .card:hover div.card-img-overlay div,
 .card:focus div.card-img-overlay div,
 .card:focus-within div.card-img-overlay div {
+  opacity: 1;
+}
+
+.card:hover div.card-img-overlay div button,
+.card:focus div.card-img-overlay div button,
+.card:focus-within div.card-img-overlay div button {
+  transform: translateY(0px);
+  transition: .25s ease-out;
+}
+
+.card:hover img,
+.card:focus img,
+.card:focus-within img {
+  opacity: .25;
+  transition: .25s ease-out;
+}
+
+.card-img-overlay div {
+  z-index: 3;
+}div.card-img-overlay div {
   opacity: 0;
+}
+
+div.card-img-overlay div button{
+  transform: translateY(-50%);
+}
+
+.card:hover div.card-img-overlay div,
+.card:focus div.card-img-overlay div,
+.card:focus-within div.card-img-overlay div {
+  opacity: 1;
 }
 
 .card:hover div.card-img-overlay div button,
