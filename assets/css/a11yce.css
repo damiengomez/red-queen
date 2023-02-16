@@ -22,7 +22,7 @@ div.card-img-overlay div button{
 .card:hover img,
 .card:focus img,
 .card:focus-within img {
-  opacity: 0;
+  opacity: .25;
   transition: .25s ease-out;
 }
 
