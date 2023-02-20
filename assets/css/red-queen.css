@@ -62,4 +62,20 @@ div.card-img-overlay div button{
 
 .btn:focus-visible {
   outline: 0;
+  opacity: none;
+}
+
+.btn:focus {
+  outline: 0;
+  opacity: none;
+}
+
+.navbar-brand:hover {
+  outline: 0;
+  opacity: none;
+}
+
+a:hover {
+  outline: 0;
+  opacity: none;
 }
