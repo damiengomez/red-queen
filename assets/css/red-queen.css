@@ -60,7 +60,7 @@ div.card-img-overlay div button{
   z-index: 3;
 }
 
-a:focus {
+a:focus-visible {
   outline: none;
 }
 
