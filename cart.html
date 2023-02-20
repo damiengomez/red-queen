@@ -246,19 +246,34 @@
                 </div>
               </div>
               <div class="col-3">
-                <label for="nombre">Sélectionnez un nombre entre 001 et 999:</label>
-                <input type="range" id="nombre" name="nombre" min="1" max="999" value="1" step="1" oninput="valeur.value = this.value.padStart(3, '0')">
+                <label for="nombre">Sélectionnez le CVV entre 001 et 999:</label>
+                <input type="range" id="nombre" name="nombre" min="1" max="999" value="1" step="1" oninput="updateOutput(this.value)">
+                <input type="number" id="nombre-input" name="nombre-input" min="1" max="999" value="1" oninput="updateRange(this.value)">
                 <output name="nombre" id="output">001</output>
                 
                 <script>
                   const rangeInput = document.getElementById('nombre');
+                  const numberInput = document.getElementById('nombre-input');
                   const output = document.getElementById('output');
                 
-                  rangeInput.addEventListener('input', (event) => {
-                    output.value = event.target.value.padStart(3, '0');
-                  });
-                </script>
+                  function updateOutput(value) {
+                    output.value = value.toString().padStart(3, '0');
+                  }
                 
+                  function updateRange(value) {
+                    value = Math.min(Math.max(value, 1), 999);
+                    rangeInput.value = value;
+                    updateOutput(value);
+                  }
+                
+                  rangeInput.addEventListener('input', (event) => {
+                    updateOutput(event.target.value);
+                  });
+                
+                  numberInput.addEventListener('input', (event) => {
+                    updateRange(event.target.value);
+                  });
+                </script>               
                 <!-- <label for="Numéro de CVV présent au dos de la carte bleu" class="form-label">CVV</label>
                 <input type="text" class="form-control" id="cc-cvv" placeholder="exemple: 111">
                 <div class="invalid-feedback">
