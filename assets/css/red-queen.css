@@ -60,12 +60,8 @@ div.card-img-overlay div button{
   z-index: 3;
 }
 
-.card:focus {
-outline-offset: .25rem;
-transition: outline-offset .15s ease-in-out;
-  transition-property: outline-offset;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-white-space: normal;
+.btn:focus-visible {
+  color: none;
+  border-color: none;
+  outline: 0;
 }
