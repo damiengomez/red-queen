@@ -248,11 +248,11 @@
               <div class="col-3">
                 <label for="nombre">Sélectionnez votre CVV entre 001 et 999:</label>
                 <input type="range" id="nombre" name="nombre" min="1" max="999" value="1" step="1" oninput="updateOutput(this.value)">
-                <output name="nombre" id="nombre">001</output>
+                <output name="nombre" id="output">001</output>
                 
                 <script>
                   const rangeInput = document.getElementById('nombre');
-                  const output = document.getElementById('nombre');
+                  const output = document.getElementById('output');
                 
                   function updateOutput(value) {
                     output.value = value.toString().padStart(3, '0');
@@ -261,8 +261,17 @@
                   rangeInput.addEventListener('input', (event) => {
                     updateOutput(event.target.value);
                   });
+                
+                  output.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                      const value = parseInt(output.value, 10);
+                      if (value >= 1 && value <= 999) {
+                        rangeInput.value = value;
+                        updateOutput(value);
+                      }
+                    }
+                  });
                 </script>
-                            
                 <!-- <label for="Numéro de CVV présent au dos de la carte bleu" class="form-label">CVV</label>
                 <input type="text" class="form-control" id="cc-cvv" placeholder="exemple: 111">
                 <div class="invalid-feedback">
