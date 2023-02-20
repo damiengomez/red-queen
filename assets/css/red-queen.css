@@ -60,22 +60,10 @@ div.card-img-overlay div button{
   z-index: 3;
 }
 
-.btn:focus-visible {
-  outline: 0;
-  opacity: none;
+a:focus {
+  outline: none;
 }
 
-.btn:focus {
-  outline: 0;
-  opacity: none;
-}
-
-.navbar-brand:hover {
-  outline: 0;
-  opacity: none;
-}
-
-a:hover {
-  outline: 0;
-  opacity: none;
+.focus-only:focus {
+  outline: none;
 }
