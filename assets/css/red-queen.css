@@ -61,7 +61,5 @@ div.card-img-overlay div button{
 }
 
 .btn:focus-visible {
-  color: none;
-  border-color: none;
   outline: 0;
 }
