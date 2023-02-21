@@ -146,78 +146,157 @@
       <div class="container py-5">
         <div class="row row-cols-1 row-cols-lg-2">
           <div class="col-lg-8 mb-3 order-2 order-lg-1">
-            <h2 class="fw-bold text-uppercase">Adresse de facturation</h2>
-            <div class="row gy-3 py-5">
-              <div class="col-6">
-                <label for="Prénom" class="form-label">Prénom</label>
-                <input type="text" class="form-control" id="first name" placeholder="Indiquer votre prénom" value="">
-                <div class="invalid-feedback">
-                  erreur
-                </div>
-              </div>
+            <ul class="nav nav-tabs nav-tabs-light">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold text-uppercase" href="#" aria-current="page">Adresse de facturation</a>  
+               <!-- <h2 class="fw-bold text-uppercase">Adresse de facturation</h2> -->
+                <div class="row gy-3 py-5">
+                  <div class="col-6">
+                    <label for="Prénom" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="first name" placeholder="Indiquer votre prénom" value="">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
 
-              <div class="col-6">
-                <label for="Nom" class="form-label">Nom</label>
-                <input type="text" class="form-control" id="last name" placeholder="Indiquer votre nom" value="">
-                <div class="invalid-feedback">
-                  erreur
-                </div>
-              </div>
+                  <div class="col-6">
+                    <label for="Nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="last name" placeholder="Indiquer votre nom" value="">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
 
-              <div class="col-12">
-                <label for="email" class="form-label">Email<span class="text-muted">(Optionnel)</span></label>
-                <input type="mail" class="form-control" id="mail" placeholder="exemple: you@example.com">
-                <div class="invalid-feedback">
-                  erreur
-                </div>
-              </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email<span class="text-muted">(Optionnel)</span></label>
+                    <input type="mail" class="form-control" id="mail" placeholder="exemple: you@example.com">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
 
-              <div class="col-12">
-                <label for="adresse" class="form-label">Adresse</label>
-                <input type="text" class="form-control" id="address" placeholder="exemple: 42 rue du handicap'" required="false">
-                <div class="invalid-feedback">
-                  erreur
-                </div>
-              </div>
+                  <div class="col-12">
+                    <label for="adresse" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="address" placeholder="exemple: 42 rue du handicap'" required="false">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
 
-              <div class="col-12">
-                <input type="text" class="form-control" id="adresse 2" placeholder="Adresse 2">
-              </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" id="adresse 2" placeholder="Adresse 2">
+                  </div>
 
-              <div class="col-5">
-                <label for="Pays" class="form-label">Pays</label>
-                <select class="form-select" id="country">
-                  <option value="">Sélectionner...</option>
-                  <option>Bretagne</option>
-                  <option>France</option>
-                  <option>Belgique</option>
-                  <option>Listenbourg</option>
-                </select>
-                <div class="invalid-feedback">
-                  erreur
-                </div>
-              </div>
+                  <div class="col-5">
+                    <label for="Pays" class="form-label">Pays</label>
+                    <select class="form-select" id="country">
+                      <option value="">Sélectionner...</option>
+                      <option>Bretagne</option>
+                      <option>France</option>
+                      <option>Belgique</option>
+                      <option>Listenbourg</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
 
-              <div class="col-4">
-                <label for="Région" class="form-label">Région</label>
-                <select class="form-select" id="state" required="true">
-                  <option value="">Sélectionner</option>
-                  <option>Bretagne libre</option>
-                  <option>Autre</option>
-                </select>
-                <div class="invalid-feedback">
-                  erreur
-                </div>
-              </div>
+                  <div class="col-4">
+                    <label for="Région" class="form-label">Région</label>
+                    <select class="form-select" id="state" required="true">
+                      <option value="">Sélectionner</option>
+                      <option>Bretagne libre</option>
+                      <option>Autre</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
 
-              <div class="col-3">
-                <label for="Code postal" class="form-label">Code postal</label>
-                <input type="text" class="form-control" id="zip" placeholder="exemple: 95110">
-                <div class="invalid-feedback">
-                  erreur
+                  <div class="col-3">
+                    <label for="Code postal" class="form-label">Code postal</label>
+                    <input type="text" class="form-control" id="zip" placeholder="exemple: 95110">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold text-uppercase" href="#" aria-current="page">Adresse de livraison</a>  
+               <!-- <h2 class="fw-bold text-uppercase">Adresse de facturation</h2> -->
+                <div class="row gy-3 py-5">
+                  <div class="col-6">
+                    <label for="Prénom" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="first name" placeholder="Indiquer votre prénom" value="">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <label for="Nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="last name" placeholder="Indiquer votre nom" value="">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email<span class="text-muted">(Optionnel)</span></label>
+                    <input type="mail" class="form-control" id="mail" placeholder="exemple: you@example.com">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="adresse" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="address" placeholder="exemple: 42 rue du handicap'" required="false">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" id="adresse 2" placeholder="Adresse 2">
+                  </div>
+
+                  <div class="col-5">
+                    <label for="Pays" class="form-label">Pays</label>
+                    <select class="form-select" id="country">
+                      <option value="">Sélectionner...</option>
+                      <option>Bretagne</option>
+                      <option>France</option>
+                      <option>Belgique</option>
+                      <option>Listenbourg</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <label for="Région" class="form-label">Région</label>
+                    <select class="form-select" id="state" required="true">
+                      <option value="">Sélectionner</option>
+                      <option>Bretagne libre</option>
+                      <option>Autre</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <label for="Code postal" class="form-label">Code postal</label>
+                    <input type="text" class="form-control" id="zip" placeholder="exemple: 95110">
+                    <div class="invalid-feedback">
+                      erreur
+                    </div>
+                  </div>
+                </div>
+              </li>
             <h2 class="fw-bold text-uppercase">Informations de paiement</h2>
             <div class="row gy-3 py-5">
               <div class="col-6">
