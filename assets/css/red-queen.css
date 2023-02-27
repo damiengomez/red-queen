@@ -61,10 +61,12 @@ div.card-img-overlay div button{
 }
 
 .btn.btn-secondary.dropdown-toggle:focus-visible,
-.btn.btn-primary.dropdown-toggle:focus-visible {
-  color: none!important;
-  background-color: none!important;
-  border-color: none!important;
-  outline: none!important;
-  box-shadow: none!important;
+.btn.btn-primary.dropdown-toggle:focus-visible,
+.btn-outline-dark,
+.btn-dark {
+  color: none !important;
+  background-color: none !important;
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
