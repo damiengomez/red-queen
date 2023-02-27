@@ -76,3 +76,8 @@ div.card-img-overlay div button{
   --bs-nav-link-color: none !important;
   --bs-nav-tabs-link-active-bg: none !important;
 }
+
+.border-bottom.nav-link {
+  border-bottom: none !important;
+}
+
