@@ -159,7 +159,7 @@
                 <div class="row gy-3 py-5">
                   <div class="col-6">
                     <label for="Prénom" class="form-label">Prénom</label>
-                    <input type="text" class="form-control" id="first name" placeholder="Indiquer votre prénom" value="">
+                    <input type="text" class="form-control" required="required" id="first name" placeholder="Indiquer votre prénom" value="">
                     <div class="invalid-feedback">
                     Champ vide
                     </div>
@@ -167,7 +167,7 @@
 
                   <div class="col-6">
                     <label for="Nom" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="last name" placeholder="Indiquer votre nom" value="">
+                    <input type="text" class="form-control" required="required" id="last name" placeholder="Indiquer votre nom" value="">
                     <div class="invalid-feedback">
                     Champ vide
                     </div>
@@ -183,7 +183,7 @@
 
                   <div class="col-12">
                     <label for="adresse" class="form-label">Adresse</label>
-                    <input type="text" class="form-control" id="address" placeholder="exemple: 42 rue du handicap'" required="false">
+                    <input type="text" class="form-control" required="required" id="address" placeholder="exemple: 42 rue du handicap'" required="false">
                     <div class="invalid-feedback">
                       erreur de saisie, veuillez entrer une adresse valide
                     </div>
@@ -195,7 +195,7 @@
 
                   <div class="col-5">
                     <label for="Pays" class="form-label">Pays</label>
-                    <select class="form-select" id="country">
+                    <select class="form-select" required="required" id="country">
                       <option value="">Sélectionner...</option>
                       <option>Bretagne</option>
                       <option>France</option>
@@ -209,7 +209,7 @@
 
                   <div class="col-4">
                     <label for="Région" class="form-label">Région</label>
-                    <select class="form-select" id="state" required="true">
+                    <select class="form-select" required="required" id="state" required="true">
                       <option value="">Sélectionner</option>
                       <option>Bretagne libre</option>
                       <option>Autre</option>
@@ -221,7 +221,7 @@
 
                   <div class="col-3">
                     <label for="Code postal" class="form-label">Code postal</label>
-                    <input type="text" class="form-control" id="zip" placeholder="exemple: 95110">
+                    <input type="text" class="form-control" required="required" id="zip" placeholder="exemple: 95110">
                     <div class="invalid-feedback">
                       Veuillez indiquer un code postal valide
                     </div>
@@ -232,7 +232,7 @@
               <div class="row gy-3 py-5">
                 <div class="col-6">
                   <label for="Nom présent sur la carte banquaire" class="form-label">Nom de la carte banquaire</label>
-                  <input type="text" class="form-control" id="cc-name" placeholder="">
+                  <input type="text" class="form-control" required="required" id="cc-name" placeholder="">
                   <small class="text-muted">Nom complet présent sur la carte banquaire.</small>
                   <div class="invalid-feedback">
                     Veuillez indiquer le nom complet présent sur la carte banquaire
@@ -241,7 +241,7 @@
 
                 <div class="col-6">
                   <label for="Numéro présent sur la carte banquaire" class="form-label">Numéro de carte bleu</label>
-                  <input type="text" class="form-control" id="cc-number" placeholder="exemple: 4976 4562 2356 4578">
+                  <input type="text" class="form-control" required="required" id="cc-number" placeholder="exemple: 4976 4562 2356 4578">
                   <small class="text-muted">Série de 16 chiffres indiqués sur la carte banquaire.</small>
                   <div class="invalid-feedback">
                     Veuillez indiquer les chiffres présent sur la carte banquaire
@@ -250,7 +250,7 @@
 
                 <div class="col-3">
                   <label for="Date d'expiration de la carte bleu" class="form-label">Expiration</label>
-                  <input type="text" class="form-control" id="cc-expiration" placeholder="exemple: 06/24">
+                  <input type="text" class="form-control" required="required" id="cc-expiration" placeholder="exemple: 06/24">
                   <div class="invalid-feedback">
                     Veuillez remplir ce champ
                   </div>
