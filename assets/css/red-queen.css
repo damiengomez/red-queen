@@ -60,7 +60,8 @@ div.card-img-overlay div button{
   z-index: 3;
 }
 
-.btn.btn-secondary.btn-sm.dropdown-toggle.mx-2:focus-visible {
+.btn.btn-secondary.dropdown-toggle:focus-visible,
+.btn.btn-primary.dropdown-toggle:focus-visible {
   color: none!important;
   background-color: none!important;
   border-color: none!important;
