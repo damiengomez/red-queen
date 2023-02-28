@@ -81,3 +81,12 @@ div.card-img-overlay div button{
   border-bottom: none !important;
 }
 
+.nav-link.active {
+  color:  #e46701 !important;
+  background-color: none !important;
+  border-color: none !important;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: none !important;
+}
