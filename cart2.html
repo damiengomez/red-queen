@@ -174,10 +174,10 @@
                   </div>
 
                   <div class="col-12">
-                    <label for="email" class="form-label">Email<span class="text-muted">(Optionnel)</span></label>
-                    <input type="mail" aria-invalid="true" class="form-control" id="mail" placeholder="exemple: you@example.com">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="mail" aria-invalid="true" class="form-control" id="mail" required="required" pattern="^@]+@^@]+\.[a-zA-Z]{2,6}" placeholder="exemple: you@example.com">
                     <div class="invalid-feedback">
-                      email non conforme
+                      erreur
                     </div>
                   </div>
 
@@ -209,7 +209,7 @@
 
                   <div class="col-4">
                     <label for="Région" class="form-label">Région</label>
-                    <select class="form-select" required="required" id="state" required="true">
+                    <select class="form-select" required="required" id="state" required="required">
                       <option value="">Sélectionner</option>
                       <option>Bretagne libre</option>
                       <option>Autre</option>
