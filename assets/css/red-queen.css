@@ -90,3 +90,14 @@ div.card-img-overlay div button{
 .nav-tabs {
   --bs-nav-tabs-border-width: none !important;
 }
+
+.img {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+}
