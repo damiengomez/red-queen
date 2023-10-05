@@ -186,7 +186,6 @@
                           erreur
                         </div>
                       </div>
-
                       <div class="col-12">
                         <label for="adresse" class="form-label">Adresse *</label>
                         <input type="text" class="form-control" id="address" placeholder="exemple: 42 rue du handicap'" required="required">
@@ -194,12 +193,9 @@
                           erreur de saisie, veuillez entrer une adresse valide
                         </div>
                       </div>
-
-                      <div class="col-12">
-																														
+                      <div class="col-12">																														
                         <input type="text" class="form-control" id="adresse 2" placeholder="Adresse 2">
                       </div>
-
                       <div class="col-5">
                         <label for="Pays" required="required" class="form-label">Pays</label>
                         <select class="form-select" id="country">
@@ -213,7 +209,6 @@
                           Sélectionner un pays
                         </div>
                       </div>
-
                       <div class="col-4">
                         <label for="Région" required="required" class="form-label">Région *</label>
                         <select class="form-select" id="state">
@@ -225,7 +220,6 @@
                           erreur
                         </div>
                       </div>
-
                       <div class="col-3">
                         <label for="Code postal" class="form-label">Code postal *</label>
                         <input type="text" class="form-control" required="required" id="zip" placeholder="exemple: 95110">
@@ -234,7 +228,6 @@
                         </div>		  
                       </div>
                     </div>
-
                 <h2 class="fw-bold text-uppercase">Informations de paiement</h2>
                 <div class="row gy-3 py-5">
                   <div class="col-6">
@@ -245,8 +238,6 @@
                       Veuillez indiquer le nom complet présent sur la carte banquaire
                     </div>
                   </div>
-					  
-
                   <div class="col-6">
                     <label for="Numéro présent sur la carte banquaire" class="form-label">Numéro de carte bleu</label>
                     <input type="text" class="form-control" aria-required="true" id="cc-number" placeholder="exemple: 4976 4562 2356 4578">
@@ -255,8 +246,6 @@
                       Veuillez indiquer les chiffres présent sur la carte banquaire
                     </div>
                   </div>
-					  
-
                   <div class="col-3">
                     <label for="Date d'expiration de la carte bleu" aria-required="true" class="form-label">Expiration</label>
                     <input type="text" class="form-control" id="cc-expiration" placeholder="exemple: 06/24">
@@ -264,13 +253,12 @@
                       Veuillez remplir ce champ
                     </div>
                   </div>
-					  
-					
-
                   <div class="col-3">
                     <label for="nombre">Sélectionnez votre CVV entre 001 et 999:</label>
-                    <input type="range" id="nombre" name="nombre" min="1" max="999" value="1" step="1" oninput="updateOutput(this.value)">
+                    <input type="range" id="nombre" required name="nombre" min="1" max="999" value="1" step="1" oninput="updateOutput(this.value)">
                     <output name="nombre" id="output">001</output>
+                    <div class="invalid-feedback">
+                      Code invalide
                     
                     <script>
                       var range = document.getElementById("nombre");
