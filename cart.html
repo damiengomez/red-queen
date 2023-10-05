@@ -257,8 +257,6 @@
                     <label for="nombre">Sélectionnez votre CVV entre 001 et 999:</label>
                     <input type="range" id="nombre" required name="nombre" min="1" max="999" value="1" step="1" oninput="updateOutput(this.value)">
                     <output name="nombre" id="output">001</output>
-                    <div class="invalid-feedback">
-                      Code invalide
                     
                     <script>
                       var range = document.getElementById("nombre");
