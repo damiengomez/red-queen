@@ -122,8 +122,11 @@
             </ul>
             <ul class="navbar-text flex-shrink list-inline mb-0">
               <li class="list-inline-item">
-                <a href="search.html"><i class="bi bi-search" role="img" aria-label="Rechercher"></i></a>
-              </li>
+                <form action="search.html" role="search" class="d-flex">
+                  <input name="q" id="q" class="form-control" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                  <button type="submit" class="btn"><i class="bi bi-search" aria-hidden="true"></i><span class="visually-hidden">Rechercher</span></button>
+                </form>              
+				</li>
               <li class="list-inline-item">
                 <a href="#"><i class="bi bi-person" role="img" aria-label="Mon compte"></i></a>
               </li>
@@ -193,6 +196,7 @@
                       </div>
 
                       <div class="col-12">
+																														
                         <input type="text" class="form-control" id="adresse 2" placeholder="Adresse 2">
                       </div>
 
@@ -227,7 +231,7 @@
                         <input type="text" class="form-control" required="required" id="zip" placeholder="exemple: 95110">
                         <div class="invalid-feedback">
                           Veuillez indiquer un code postal valide
-                        </div>
+                        </div>		  
                       </div>
                     </div>
 
@@ -241,6 +245,7 @@
                       Veuillez indiquer le nom complet présent sur la carte banquaire
                     </div>
                   </div>
+					  
 
                   <div class="col-6">
                     <label for="Numéro présent sur la carte banquaire" class="form-label">Numéro de carte bleu</label>
@@ -250,6 +255,7 @@
                       Veuillez indiquer les chiffres présent sur la carte banquaire
                     </div>
                   </div>
+					  
 
                   <div class="col-3">
                     <label for="Date d'expiration de la carte bleu" aria-required="true" class="form-label">Expiration</label>
@@ -258,6 +264,8 @@
                       Veuillez remplir ce champ
                     </div>
                   </div>
+					  
+					
 
                   <div class="col-3">
                     <label for="nombre">Sélectionnez votre CVV entre 001 et 999:</label>
@@ -299,6 +307,7 @@
 
                     <!-- <label for="Numéro de CVV présent au dos de la carte bleu" class="form-label">CVV</label>
                     <input type="text" class="form-control" id="cc-cvv" placeholder="exemple: 111">
+						
                     <div class="invalid-feedback">
                       erreur
                     </div> -->
@@ -370,15 +379,28 @@
                 <li class="me-3"><a href="#"><i class="bi bi-facebook" role="img" aria-label="Facebook"></i></a></li>
               </ul>
             </div>
+  
             <div class="col mb-3 order-3">
               <h3 class="fw-bold text-uppercase fs-6">Informations pratiques</h3>
               <div class="nav flex-column">
+					
                   <a href="#">Qui sommes-nous ?</a>
+					 
+					
                   <a href="#">Conditions générales de ventes</a>
+					 
+					
                   <a href="#">Livraison</a>
+					 
+					
                   <a href="#"><abbr title="Foire Aux Questions">FAQ</abbr></a>
+					 
+					
                   <a href="#">Blog</a>
+					 
+					
                   <a href="#">Nous contacter</a>
+					 
               </div>
             </div>
             <div class="col mb-3 order-1">
@@ -415,5 +437,6 @@
     <script src="assets/js/toast.js"></script>
     <script src="assets/js/validate.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/search.js"></script>	
   </body>
 </html>
