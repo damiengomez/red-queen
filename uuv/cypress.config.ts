@@ -7,7 +7,7 @@ export default defineConfig({
     videosFolder: "reports/videos",
     screenshotsFolder: "reports/screenshots",
     e2e: {
-        baseUrl: "http://localhost:4200",
+        baseUrl: "https://damiengomez.github.io/red-queen/",
         specPattern: "e2e/**/*.{cy.ts,feature}",
         supportFile: false,
         setupNodeEvents,
