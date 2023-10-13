@@ -1,0 +1,13 @@
+{
+  "name": "red-queen",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "uuv": "node node_modules/@uuv/cypress/bin/uuv"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@uuv/cypress": "^1.11.0"
+  }
+}

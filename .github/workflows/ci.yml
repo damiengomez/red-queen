@@ -1,0 +1,22 @@
+name: 'CI'
+
+on:
+  push:
+    branches: [ "feature/setup-uuv"]
+
+env:
+  NODE_VERSION: 18.14.0
+
+jobs:
+  integration-tests-cypress:
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node18.12.0-chrome107
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{env.NODE_VERSION}}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{env.NODE_VERSION}}
+      - run: npm ci
+      - run: npm run uuv e2e --generateHtmlReport
